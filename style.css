@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: #0b0f14;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.app { display: flex; flex-direction: column; height: 100vh; }
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.team { text-align: center; font-size: 18px; }
+.cards { font-size: 12px; margin-top: 2px; }
+
+.center-info { text-align: center; }
+#gameClock { font-size: 20px; }
+
+.possession {
+  display: flex;
+  height: 8px;
+  background: #333;
+}
+#homePossession { background: #00ccff; width: 50%; }
+#awayPossession { background: #ff3366; width: 50%; }
+
+video { width: 100%; background: black; }
+
+.replay-panel { padding: 8px; background: #111; }
+#scrubber { width: 100%; }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #ffcc00;
+}
+
+.event-log {
+  flex: 1;
+  overflow-y: auto;
+  background: #0f141b;
+  padding: 6px;
+  font-size: 13px;
+}
+
+.admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px;
+  background: #111;
+}
